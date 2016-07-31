@@ -15,13 +15,13 @@ if the Red Line is ON please immidiatelly switch off the Motor Power Supply othe
 
 
 #include <SPI.h>    // include the SPI library:
-
-
 #include "cL6470.h"
+
+ 
 
 String cmd = "";
 
-cL6470 L6470(11,12,10,13,5,6);
+cL6470 L6470(11,12,10,13,5,6); //cL6470(MOSI, MISO, CS, CLK, BUSY , RESET ); 
 
 void setup() 
 {
