@@ -5,7 +5,7 @@ to update the Value please use the Excel file. check your Holding current ,Runni
 and Phase resistance in the motor Datsheet,put these value into the excel file then you will get the KVAL value then update these KVAL values into the example Special section
 
 
-
+please first connect the Motor Supply and then turn On the arduino.
 
 if the Red Line is ON please immidiatelly switch off the Motor Power Supply otherwise you will demake your Board
 
