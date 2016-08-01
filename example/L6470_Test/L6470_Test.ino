@@ -1,7 +1,8 @@
 /*         Special Note                
 
 Before Run this Code Please Update the Value in Special Spection Section At Line 107-126
-to update the Value please use the Excel file. check your Holding current ,Running current, phase inductance (Lph)
+to update the Value please use the Excel file(BEMF compensation) if you install the library then please 
+found in your documents->Arduino->libraries->L6470 Folder. check your Holding current ,Running current, phase inductance (Lph)
 and Phase resistance in the motor Datsheet,put these value into the excel file then you will get the KVAL value then update these KVAL values into the example Special section
 
 
@@ -135,7 +136,7 @@ void setup()
 
 void loop()
 {
-
+L6470._GetStatus(); // Clear the error
 L6470._Move(FWD, 25600);
   while (digitalRead(L6470._Get_BUSY()) == LOW);  // Until the movement completes, the
         {}                                    //  BUSYN pin will be low.
