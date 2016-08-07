@@ -141,12 +141,12 @@ L6470._Move(FWD, 25600);
   while (digitalRead(L6470._Get_BUSY()) == LOW);  // Until the movement completes, the
         {}                                    //  BUSYN pin will be low.
 L6470._SetParam(x_MAX_SPEED, L6470._MaxSpdCalc(300));  // Change the Speed
-L6470._Move(REV, 15600);
+delay(500);
+L6470._Move(REV, 25600);
   while (digitalRead(L6470._Get_BUSY()) == LOW);  // Until the movement completes, the
         {}                                    //  BUSYN pin will be low.
- L6470._SetParam(x_MAX_SPEED, L6470._MaxSpdCalc(50));  // Change the Speed
-L6470._Move(REV, 10000);
-  while (digitalRead(L6470._Get_BUSY()) == LOW);  // Until the movement completes, the
+L6470._SetParam(x_MAX_SPEED, L6470._MaxSpdCalc(50));  // Change the Speed
+delay(500);
 }
 
 
